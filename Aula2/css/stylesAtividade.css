@@ -7,6 +7,7 @@ h1 {
 em>li {
     padding: 12px;
     background-color: blueviolet;
+    color: white;
     border: 1px solid greenyellow;
 }
 
