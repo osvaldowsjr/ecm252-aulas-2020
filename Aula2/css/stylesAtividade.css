@@ -1,0 +1,41 @@
+h1 {
+    color: blue;
+    font: italic bold 24px Arial, sans-serif;
+    text-align: center;
+}
+
+em>li {
+    padding: 12px;
+    background-color: blueviolet;
+    border: 1px solid greenyellow;
+}
+
+body {
+    background-color: grey;
+}
+
+article>p.introduction {
+    font: 20px Arial, sans-serif;
+    text-decoration: underline;
+    text-align: center;
+    background-color: hotpink;
+}
+
+.offers {
+    font: 20px Cambria, sans-serif;
+    background-color: lawngreen;
+}
+
+.impar {
+    background-color: lightgray;
+}
+
+.par {
+    background-color: cyan;
+}
+
+#courseInfo {
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px dashed blue;
+}
