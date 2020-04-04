@@ -1,42 +1,122 @@
-h1 {
-    color: blue;
-    font: italic bold 24px Arial, sans-serif;
-    text-align: center;
-}
-
-em>li {
-    padding: 12px;
-    background-color: blueviolet;
-    color: white;
-    border: 1px solid greenyellow;
-}
-
-body {
-    background-color: grey;
-}
-
-article>p.introduction {
-    font: 20px Arial, sans-serif;
-    text-decoration: underline;
-    text-align: center;
-    background-color: hotpink;
-}
-
-.offers {
-    font: 20px Cambria, sans-serif;
-    background-color: lawngreen;
-}
-
-.impar {
-    background-color: lightgray;
-}
-
-.par {
-    background-color: cyan;
-}
-
-#courseInfo {
-    margin-left: auto;
-    margin-right: auto;
-    border: 2px dashed blue;
-}
+    h1 {
+        color: #E8EAF6;
+        font: italic bold 150% Arial, sans-serif;
+        text-align: center;
+    }
+    
+    em>li {
+        padding: 12px;
+        border-radius: 5px;
+        box-sizing: border-box;
+        background-color: #9FA8DA;
+        color: #536DFE;
+        border: 1px solid #C5CAE9;
+    }
+    
+    body {
+        background-color: #283593;
+    }
+    
+    article>p.introduction {
+        font: 125% Arial, sans-serif;
+        color: #E8EAF6;
+        text-decoration: underline;
+        text-align: center;
+        background-color: #7986CB;
+        box-sizing: border-box;
+        border-radius: 10px;
+    }
+    
+    .offers {
+        color: #E8EAF6;
+        border-radius: 10px;
+        box-sizing: border-box;
+        text-align: center;
+        font: 125% Cambria, sans-serif;
+        background-color: #7986CB;
+    }
+    
+    .impar {
+        color: #E8EAF6;
+        background-color: #304FFE;
+    }
+    
+    .par {
+        color: #1A237E;
+        background-color: #8C9EFF;
+    }
+    
+    #courseInfo {
+        border-radius: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        border: 2px dashed #E8EAF6;
+    }
+    
+    ul {
+        margin-left: auto;
+        margin-right: auto;
+        flex-wrap: wrap;
+    }
+    /* Estilo em paginas pequenas */
+    
+    @media(max-width:550px) {
+        h1 {
+            color: #b71c1c;
+            font: italic bold 150% Arial, sans-serif;
+            text-align: center;
+        }
+        em>li {
+            padding: 12px;
+            border-radius: 5px;
+            box-sizing: border-box;
+            background-color: #f05545;
+            color: #ffffff;
+            border: 1px solid #C5CAE9;
+        }
+        body {
+            background-color: #7f0000;
+        }
+        article>p.introduction {
+            font: 125% Arial, sans-serif;
+            color: #E8EAF6;
+            text-decoration: underline;
+            text-align: center;
+            background-color: #ef9a9a;
+            box-sizing: border-box;
+            border-radius: 10px;
+        }
+        .offers {
+            color: #ef9a9a;
+            border-radius: 10px;
+            box-sizing: border-box;
+            text-align: center;
+            font: 125% Cambria, sans-serif;
+            background-color: #E8EAF6;
+        }
+        .impar {
+            color: #E8EAF6;
+            background-color: #ba6b6c;
+        }
+        .par {
+            color: #1A237E;
+            background-color: #ffcccb;
+        }
+        #courseInfo {
+            border-radius: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            border: 2px dashed #E8EAF6;
+        }
+        ul {
+            margin-left: auto;
+            margin-right: auto;
+            flex-wrap: wrap;
+        }
+        #imageTop {
+            border: 1px solid #b71c1c;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
