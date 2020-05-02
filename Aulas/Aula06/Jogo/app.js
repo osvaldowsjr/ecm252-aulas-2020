@@ -34,11 +34,7 @@ function zerarJogo() {
 function showModal() {
     var winner = ""
     $("#myModal").on("show.bs.modal", function(event) {
-        if (jogadorAtual == 1) {
-            winner = "Jogador 1 venceu!"
-        } else {
-            winner = "Jogador 2 venceu"
-        }
+        winner = "O jogador " + (1 - jogadorAtual) + " venceu";
         $(this).find(".modal-title").text(winner);
     })
     $("#myModal").modal('show');
