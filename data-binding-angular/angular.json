@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-workspace-maua": {
+    "data-binding-angular": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular-workspace-maua",
+            "outputPath": "dist/data-binding-angular",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -63,18 +63,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "angular-workspace-maua:build"
+            "browserTarget": "data-binding-angular:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "angular-workspace-maua:build:production"
+              "browserTarget": "data-binding-angular:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-workspace-maua:build"
+            "browserTarget": "data-binding-angular:build"
           }
         },
         "test": {
@@ -111,19 +111,19 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "angular-workspace-maua:serve"
+            "devServerTarget": "data-binding-angular:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "angular-workspace-maua:serve:production"
+              "devServerTarget": "data-binding-angular:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "angular-workspace-maua",
+  "defaultProject": "data-binding-angular",
   "cli": {
-    "analytics": "c3448fec-0e1b-4dcd-aeb8-e95d64fdb42b"
+    "analytics": false
   }
 }
