@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
 
-<body>
+<body style="padding-top: 5%;">
     <nav class="navbar navbar-expand-sm fixed-top navbar-dark bg-dark">
         <div class="container">
             <div class="collapse navbar-collapse" id="minhaNavBar">
@@ -22,9 +22,16 @@
             </form>
         </div>
     </nav>
-    <app-curso-cadastro></app-curso-cadastro>
-    <app-lista-cursos></app-lista-cursos>
-    <app-lista-professores></app-lista-professores>
+
+    <div class="container">
+        <app-curso-cadastro (cursoAdicionado)="onAdicionarCurso($event)"></app-curso-cadastro>
+        <div class="row">
+            <div class="col-4" *ngFor="let curso of cursos ">
+                <app-lista-cursos [curso]="curso"></app-lista-cursos>
+            </div>
+        </div>
+        <app-lista-professores></app-lista-professores>
+    </div>
 </body>
 
 </html>
