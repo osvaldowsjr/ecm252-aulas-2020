@@ -9,4 +9,9 @@
             {{nome}}
         </div>
     </form>
+    <label for="produtoInput">Produto</label>
+    <input type="text" class="form-control" id="produtoInput" [(ngModel)]="produto" #produtoInput>
+    <button type="button" class="btn btn-primary btn-block" (click)="alterarProduto(produtoInput)">
+    Alterar produto
+    </button> {{produto}}
 </div>
