@@ -7,4 +7,16 @@ import { Component, Input } from '@angular/core';
 })
 export class ListaCursosComponent{
   @Input() curso;
+
+  obterEstilosParaTitulo(){
+    return{
+      color: 'red',
+    }
+  }
+
+  obterEstilosParaTexto(){
+    return{
+      color:'blue',
+    }
+  }
 }

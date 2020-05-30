@@ -17,7 +17,11 @@ export class AppComponent {
     { nome: "Engenharia elétrica", descricao: "A Mauá oferece a seu aluno de Engenheira Elétrica uma formação que, além de fortemente alicerçada nos conceitos fundamentais da Engenharia, permeia e entrelaça as áreas de Conversão de Energia, Regulamentação, Proteção, Distribuição e Energias Alternativas. Embora científico e tecnológico, o curso de Engenharia Elétrica também dá aos seus alunos a base para um pensamento humanístico e social que faz do profissional um elemento de atuação diferenciada na sociedade." },
     { nome: "Engenharia eletronica", descricao: "A Mauá oferece a seu aluno de Engenheira Eletrônica uma formação com base nos conceitos fundamentais da Engenharia com as áreas de Telecomunicações, Sistemas Computacionais, Eletrônica e Automação de Processos Industriais. Embora científica e tecnológica, a formação também valoriza os aspectos humanísticos e sociais que tornam o profissional um elemento de atuação diferenciada para a sociedade" },
     { nome: "Engenharia produção", descricao: "O Engenheiro de Produção planeja, projeta e gerencia sistemas organizacionais que envolvem recursos humanos, materiais, tecnológicos, financeiros e ambientais. Alia conhecimentos técnicos e gerenciais para otimizar o uso de recursos produtivos e diminuir os custos de produção de bens e serviços." }];
-    
+    alunos=[];
+
+    onAdicionarAluno(aluno){
+      this.alunos = [aluno, ...this.alunos]
+    }
     onAdicionarCurso(curso) {
       this.cursos = [curso, ...this.cursos];
       }

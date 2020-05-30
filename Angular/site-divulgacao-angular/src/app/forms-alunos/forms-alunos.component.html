@@ -1,0 +1,31 @@
+<div class="container">
+    <div [ngClass]="obterClasseTitulo()">
+        Cadastre o aluno
+    </div>
+    <form #pessoaForm="ngForm" (ngSubmit)="salvar(pessoaForm)">
+        <div class="row">
+            <div class="form-group col-12">
+                <label for="nomeInput">Nome</label>
+                <input type="text" placeholder="nome" class="form-control p-4" name="nome" ngModel>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group col-md-4">
+                <label for="emailInput">Email</label>
+                <input type="text" placeholder="email" class="form-control p-4" name="email" ngModel>
+            </div>
+            <div class="form-group col-md-4">
+                <label for="cursoInput">Curso</label>
+                <select name="" id="cursoInput" class="form-control" name="curso" ngModel>
+    <option value="">Selecione</option>
+    <option *ngFor="let c of cursos">{{c}}</option>
+    </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary btn-block">Enviar</button>
+            </div>
+        </div>
+    </form>
+</div>

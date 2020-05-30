@@ -1,0 +1,14 @@
+.numero-par {
+    background-color: rgba(0, 0, 255, 0.349);
+}
+
+.numero-impar {
+    background-color: rgba(255, 0, 0, 0.534);
+}
+
+.botao {
+    background: rgb(66, 184, 221);
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}

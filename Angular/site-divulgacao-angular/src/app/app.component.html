@@ -14,9 +14,9 @@
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item"><a class="nav-link" href="app.component.html">Principal</a></li>
                     <li class="nav-item">
-                        <a class="nav-link" routerLink="professores" routerLinkActive="active">Professores</a>
+                        <a class="nav-link" routerLink="/professores" routerLinkActive="active">Professores</a>
                     </li>
-                    <li class="nav-item"><a class="nav-link" routerLink="forms" routerLinkActive="active">Forms</a></li>
+                    <li class="nav-item"><a class="nav-link" routerLink="/forms" routerLinkActive="active">Forms</a></li>
                 </ul>
             </div>
             <form class="form-inline">
@@ -35,6 +35,13 @@
             </div>
         </div>
         <app-lista-professores></app-lista-professores>
+
+        <app-forms-alunos (pessoaRegistrada)="onAdicionarAluno($event)"></app-forms-alunos>
+        <div class="row">
+            <div class="col-4" *ngFor="let aluno of alunos ">
+                <app-lista-alunos [aluno]="aluno"></app-lista-alunos>
+            </div>
+        </div>
     </div>
 </body>
 

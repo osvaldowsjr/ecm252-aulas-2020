@@ -1,34 +1,37 @@
 <table class="table table-hover" style="margin-top:8%; width: 100%; margin-left: auto; margin-right: auto;">
     <thead>
         <tr>
-            <th>Nome</th>
-            <th>Currículo</th>
+            <button [ngClass]='obterEstiloBotao()' (click)="gerarValor()">Valor: {{valor}}</button>
+        </tr>
+        <tr>
+            <th [ngClass]="{'numero-par':ehPar(),'numero-impar':!ehPar()}">Nome</th>
+            <th [ngClass]="{'numero-par':!ehPar(),'numero-impar':ehPar()}">Currículo</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td>Rodrigo Bossini Tavares Moreira</td>
-            <td><a href="http://lattes.cnpq.br/6239865403144513" class="btn btn-primary" role="button" target="_blank">Currículo</a></td>
+            <td [ngClass]="{'numero-par':!ehPar(),'numero-impar':ehPar()}">Rodrigo Bossini Tavares Moreira</td>
+            <td [ngClass]="{'numero-par':ehPar(),'numero-impar':!ehPar()}"><a href="http://lattes.cnpq.br/6239865403144513" class="btn btn-primary" role="button" target="_blank">Currículo</a></td>
         </tr>
         <tr>
-            <td>Aparecido Valdemir de Freitas</td>
-            <td><a href="http://lattes.cnpq.br/7066902372313632" class="btn btn-primary" role="button" target="_blank">Currículo</a></td>
+            <td [ngClass]="{'numero-par':ehPar(),'numero-impar':!ehPar()}">Aparecido Valdemir de Freitas</td>
+            <td [ngClass]="{'numero-par':!ehPar(),'numero-impar':ehPar()}"><a href="http://lattes.cnpq.br/7066902372313632" class="btn btn-primary" role="button" target="_blank">Currículo</a></td>
         </tr>
         <tr>
-            <td>Murilo Zanini de Carvalho</td>
-            <td><a href="http://lattes.cnpq.br/2274636131728093" class="btn btn-primary" role="button" target="_blank">Currículo</a></td>
+            <td [ngClass]="{'numero-par':!ehPar(),'numero-impar':ehPar()}">Murilo Zanini de Carvalho</td>
+            <td [ngClass]="{'numero-par':ehPar(),'numero-impar':!ehPar()}"><a href="http://lattes.cnpq.br/2274636131728093" class="btn btn-primary" role="button" target="_blank">Currículo</a></td>
         </tr>
         <tr>
-            <td>Ana Paula Gonçalves Serra</td>
-            <td><a href="http://lattes.cnpq.br/9640606649282934" class="btn btn-primary" role="button" target="_blank">Currículo</a></td>
+            <td [ngClass]="{'numero-par':ehPar(),'numero-impar':!ehPar()}">Ana Paula Gonçalves Serra</td>
+            <td [ngClass]="{'numero-par':!ehPar(),'numero-impar':ehPar()}"><a href="http://lattes.cnpq.br/9640606649282934" class="btn btn-primary" role="button" target="_blank">Currículo</a></td>
         </tr>
         <tr>
-            <td>Sergio Ribeiro Augusto</td>
-            <td><a href="http://lattes.cnpq.br/5713896758998889" class="btn btn-primary" role="button" target="_blank">Currículo</a></td>
+            <td [ngClass]="{'numero-par':!ehPar(),'numero-impar':ehPar()}">Sergio Ribeiro Augusto</td>
+            <td [ngClass]="{'numero-par':ehPar(),'numero-impar':!ehPar()}"><a href="http://lattes.cnpq.br/5713896758998889" class="btn btn-primary" role="button" target="_blank">Currículo</a></td>
         </tr>
         <tr>
-            <td>Everson Denis</td>
-            <td><a href="http://lattes.cnpq.br/6188650686969796" class="btn btn-primary" role="button" target="_blank">Currículo</a></td>
+            <td [ngClass]="{'numero-par':ehPar(),'numero-impar':!ehPar()}">Everson Denis</td>
+            <td [ngClass]="{'numero-par':!ehPar(),'numero-impar':ehPar()}"><a href="http://lattes.cnpq.br/6188650686969796" class="btn btn-primary" role="button" target="_blank">Currículo</a></td>
         </tr>
     </tbody>
 </table>
